@@ -7,25 +7,11 @@
 	];
 </script>
 
-<style>
-    nav {
-        display: flex;
-        justify-content: space-between;
-    }
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        gap: 1em;
-    }
-</style>
-
-<nav>
-	<div>Kacper Martela</div>
-	<ul>
+<nav class="flex justify-between">
+	<a href="/" class="text-lg font-bold">Kacper Martela</a>
+	<ul class="flex space-x-4">
 		{#each links as link}
-			<li><a href={link.url}>{link.name}</a></li>
+			<li><a href={link.url} class="text-blue-500 hover:text-blue-800">{link.name}</a></li>
 		{/each}
 	</ul>
 </nav>
