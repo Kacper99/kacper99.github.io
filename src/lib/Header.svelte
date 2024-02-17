@@ -11,7 +11,9 @@
 	<a href="/" class="text-lg font-bold">Kacper Martela</a>
 	<ul class="flex space-x-4">
 		{#each links as link}
-			<li><a href={link.url} class="text-blue-500 hover:text-blue-800">{link.name}</a></li>
+			<li>
+				<a href={link.url} class="text-blue-500 hover:text-blue-800 hover:underline">{link.name}</a>
+			</li>
 		{/each}
 	</ul>
 </nav>
